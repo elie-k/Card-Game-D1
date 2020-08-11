@@ -10,10 +10,26 @@ package ca.sheridancollege.project;
  * game. Students wishing to add to the code should remember to add themselves as a modifier.
  *
  * @author dancye
+ * @modifier Moon Hyuk Kang, James Hong, Ellie Khuzam
  */
 public abstract class Card
 {
-   //default modifier for child classes  
+   //default modifier for child classes
+    
+    protected Type type;
+    protected Value value;
+    
+    public Type getType() {
+        return type;
+    }
+
+    public Value getValue() {
+        return value;
+    }
+    
+    public void setType(Type type) {
+        this.type = type;
+    }
 
    /**
     * Students should implement this method for their specific children classes

@@ -14,15 +14,22 @@ import java.util.Collections;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @modifier Moon Hyuk Kang, James Hong, Ellie Khuzam
  */
 public class GroupOfCards {
 
     //The group of cards, stored in an ArrayList
-    private ArrayList<Card> cards;
-    private int size;//the size of the grouping
+    protected ArrayList<Card> cards;
+    protected int size;//the size of the grouping
 
     public GroupOfCards(int size) {
+        cards = new ArrayList<Card>();
         this.size = size;
+    }
+    
+    public void addCard(Card card) {
+        cards.add(card);
+        this.size++;
     }
 
     /**

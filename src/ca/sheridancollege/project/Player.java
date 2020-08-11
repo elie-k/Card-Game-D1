@@ -10,11 +10,13 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Paul Bonenfant
+ * @modifier Moon Hyuk Kang, James Hong, Ellie Khuzam
  */
 public abstract class Player
 {
 
    private String name; //the unique name for this player
+   private PlayerHand pHand;
 
    /**
     * A constructor that allows you to set the player's unique ID
@@ -24,6 +26,7 @@ public abstract class Player
    public Player (String name)
    {
       this.name = name;
+      pHand = new PlayerHand();
    }
 
    /**
@@ -43,11 +46,15 @@ public abstract class Player
    {
       this.name = name;
    }
+   
+   public PlayerHand getPHand () {
+       return pHand;
+   }
 
    /**
     * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
     * with logic to play your game.
     */
-   public abstract void play ();
+   public abstract Card play (Card card);
 
 }
