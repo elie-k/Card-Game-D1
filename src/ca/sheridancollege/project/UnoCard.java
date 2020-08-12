@@ -13,14 +13,6 @@ public class UnoCard extends Card{
         }
         this.value = value;
     }
-
-    @Override
-    public Type getType() {
-//        if (value.equals(value.WILDCARD) || value.equals(value.WILDFOUR)) {
-//            return null;
-//        }
-        return type;
-    }
     
     @Override
     public String toString() {

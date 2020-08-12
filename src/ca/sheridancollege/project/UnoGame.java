@@ -1,7 +1,5 @@
 package ca.sheridancollege.project;
 
-import java.util.Scanner;
-
 /**
  * This class extends the game class so that users can play uno by instantiating
  *
@@ -9,7 +7,7 @@ import java.util.Scanner;
  */
 public class UnoGame extends Game {
     
-    public PlayerInput sc = PlayerInput.getInstance();
+    private PlayerInput sc = PlayerInput.getInstance();
     
     private Deck UNODeck;
     private Player winner;

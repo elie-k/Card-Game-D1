@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class HumanPlayer extends Player {
     
-    public PlayerInput sc = PlayerInput.getInstance();
+    private PlayerInput sc = PlayerInput.getInstance();
     
     public HumanPlayer(String name) {
         super(name);
